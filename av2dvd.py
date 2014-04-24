@@ -30,8 +30,7 @@ class av2dvd:
 		self.filename = filename
 		self.title, self.fileExtension = os.path.splitext(filename)
 		self.outputDir = os.getcwd()
-		# Just estimated bitrates for vorbis for certain channel numbers
-		
+
 	def runSubprocess(self, args):
 		p = subprocess.Popen(shlex.split(args), stderr=subprocess.PIPE)
 		stdoutData, stderrData = p.communicate()
