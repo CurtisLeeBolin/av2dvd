@@ -45,8 +45,8 @@ class av2dvd:
 		with open('{}/{}_av2dvd_.log'.format(self.outputDir, self.title), 'a', encoding='utf-8') as f:
 			f.write('{}\n'.format(s))
 
-	def inspect_audio_video(self):
-		self.log('{} Inspecting {}'.format(time.strftime('%X'), self.title), True)
+	def analizing_av(self):
+		self.log('{} Analizing {}'.format(time.strftime('%X'), self.title), True)
 		_16_9 = 16/9
 		_4_3  =  4/3
 		audioBitrateDict = {
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
 	dvd = av2dvd(args.filename[0], args.aspect)
 
-	dvd.inspect_audio_video()
+	dvd.analizing_av()
 	dvd.create_VOB()
 	dvd.create_DVD_structure()
 	dvd.create_ISO()
