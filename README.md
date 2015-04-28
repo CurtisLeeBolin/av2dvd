@@ -8,5 +8,4 @@ Copyright 2014 Curtis Lee Bolin <CurtisLeeBolin@gmail.com>
 Requirements:
 -------------
 * ffmpeg, dvdauthor, and genisoimage
-* For Arch Linux:
-  * # pacman -S dvdauthor ffmpeg cdrkit
+  * For Arch Linux: ```# pacman -S dvdauthor ffmpeg cdrkit```
